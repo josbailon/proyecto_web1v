@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión Vicerrectorado Académico</title>
+    <link rel="stylesheet" type="text/css" href="/css/principal.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión del Vicerrectorado Académico</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="/html/documento.html">Documentos</a></li>
+                <li><a href="/html/curso.html">información</a></li>
+                <li><a href="/html/calendario.html">Calendario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Bienvenido al Vicerrectorado Académico</h2>
+        <p>Esta es la página principal de la gestión del Vicerrectorado Académico. Aquí puedes acceder a documentos, información , y el calendario de eventos académicos.</p>
+    </section>
+
+    <section class="comentarios">
+        <h2>Comentarios</h2>
+        <ul id="comentarios-list">
+            <!-- Los comentarios se mostrarán aquí -->
+        </ul>
+        <div>
+            <input type="text" id="nuevo-comentario" placeholder="Añadir un comentario">
+            <button onclick="agregarComentario()">Agregar</button>
+        </div>
+    </section>
+
+    <section class="documentos">
+        <h2>Documentos</h2>
+        <ul id="documentos-list">
+            <!-- Los documentos se mostrarán aquí -->
+        </ul>
+        <div>
+            <input type="text" id="nuevo-documento" placeholder="Añadir un documento">
+            <button onclick="agregarDocumento()">Agregar</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Vicerrectorado Académico</p>
+    </footer>
+
+    <script src="/js/principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.main-content a {
+    text-decoration: none;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para la página de redirección aula.html (deben definirse en el archivo CSS de esa página) */
+/* Otros estilos */
+
+.main-content img {
+    max-width: 150%;  /* Asegura que la imagen no sea más ancha que el contenedor */
+    height: auto;  /* Mantiene la proporción de aspecto de la imagen */
+    cursor: pointer;
+    width: 180%;  /* Ajusta el ancho a tu preferencia, por ejemplo, 80% */
+}

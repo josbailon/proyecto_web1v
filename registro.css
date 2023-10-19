@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('/imagenes/wallpaperbetter.jpg'); /* Reemplaza 'wallpaperbetter.jpg' con el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que la imagen de fondo cubra toda la altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Centra verticalmente los elementos */
+}
+h1{
+    color: #fcf8f8;
+}
+
+form {
+    max-width: 400px;
+    width: 145%;
+    margin: 0 auto;
+    background-color: #cfc2c2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgb(209, 243, 243);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#contrasena::placeholder {
+    text-align: center;
+}
+#correo::placeholder {
+    text-align: center;
+}
+#nombre::placeholder {
+    text-align: center;
+}
+.error-message {
+    color: red;
+    margin-top: 10px; /* Ajusta el margen superior del mensaje de error */
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Ajusta el margen superior del botón */
+}
+
+button:hover {
+    background-color: #0056a4;
+}

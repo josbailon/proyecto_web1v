@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="/css/inicio.css">
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form id="inicio-sesion-form" onsubmit="return validarInicioSesion()">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" required  placeholder=" ingrese correo =jostinbailon53@gmail.com">
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" required  placeholder=" ingrese contraseña valida =Contraseña123">
+        <p>¿No tienes cuenta? <a href="/html/registro.html">Registrese</a></p>
+
+        <div class="error-message" id="error-message"></div>
+        
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <script src="/js/inicio.js"></script>
+</body>
+</html>

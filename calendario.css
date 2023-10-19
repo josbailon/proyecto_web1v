@@ -1,0 +1,138 @@
+/* Estilos generales del encabezado */
+header {
+    background-color: #0074cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Asegura que la barra de navegación esté por encima del contenido */
+}
+
+/* Estilos generales del título */
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón por encima del título */
+header:hover h1 {
+    color: #ff9900;
+}
+
+/* Estilos generales de la barra de navegación */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos generales de los enlaces */
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón por encima de los enlaces */
+header nav a:hover {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+/* Estilos generales del contenido principal */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('/imagenes/Calendario.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Alinear el contenido en columna */
+}
+
+.calendar-container {
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    padding: 30px;
+    margin-top: 60px; /* Aumenta el margen superior para separar la barra de navegación */
+}
+
+/* Estilos para el calendario académico */
+.calendar-container h1 {
+    color: #0074cc;
+    font-size: 32px;
+    margin: 0 0 30px 0;
+}
+
+.event-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.event-input, .event-date {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-event {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.event-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delete-event {
+    color: red;
+    cursor: pointer;
+}
+
+.edit-event {
+    color: #0074cc;
+    cursor: pointer;
+}

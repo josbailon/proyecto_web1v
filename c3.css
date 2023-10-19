@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    font-size: 24px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.benefits {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+}
+
+.benefits ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+contact a {
+    text-decoration: none;
+    color: #0074cc;
+}
+
+footer {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

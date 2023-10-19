@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Documentos</title>
+    <link rel="stylesheet" type="text/css" href="/css/documento.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión del Vicerrectorado Académico</h1>
+        <nav>
+            <ul>
+                <li><a href="/html/principal.html">Inicio</a></li>
+                <li><a href="/html/documento.html">Documentos</a></li>
+                <li><a href="/html/curso.html">información</a></li>
+                <li><a href="/html/calendario.html">Calendario</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <h1>Administrador de Documentos</h1>
+    
+    <form id="formulario-documento">
+        <input type="file" id="archivo" accept=".pdf, .doc, .docx">
+        <button type="button" id="agregar-documento">Agregar Documento</button>
+    </form>
+
+    <ul id="lista-documentos">
+        <!-- Documentos se agregarán aquí -->
+    </ul>
+
+    <script src="/js/documento.js"></script>
+</body>
+</html>

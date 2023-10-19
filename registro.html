@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Sesión</title>
+    <link rel="stylesheet" type="text/css" href="/css/registro.css">
+</head>
+<body>
+    <h1>Registro de Sesión</h1>
+    <form id="registro-form" onsubmit="return validarRegistro()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required  placeholder=" ingrese su nombre ">
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" required placeholder=" ingrese su correo ">
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" required placeholder=" ingrese contraseña valida">
+        <p>¿Ya tienes cuenta? <a href="/html/inicio.html"> Inicie  aqui </a></p>
+
+        
+        <div class="error-message" id="error-message"></div>
+        
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <script>
+        function validarRegistro() {
+            const nombre = document.getElementById("nombre").value;
+            const correo = document.getElementById("correo").value;
+            const contrasena = document.getElementById("contrasena").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Validación para el nombre: Debe contener solo letras
+            const nombreValido = /^[A-Za-z]+$/.test(nombre);
+
+            // Validación para el correo: Debe contener un símbolo '@'
+            const correoValido = correo.includes('@');
+
+            // Validación para la contraseña: Debe contener al menos una letra mayúscula, un número y letras, y tener una longitud mínima de 8 caracteres
+            const contrasenaValida = /^(?=.*[A-Z])(?=.*\d)(?=.*[a-zA-Z]).{8,}$/.test(contrasena);
+
+            if (!nombreValido) {
+                errorMessage.textContent = "El nombre debe contener solo letras.";
+            } else if (!correoValido) {
+                errorMessage.textContent = "El correo debe contener un '@'.";
+            } else if (!contrasenaValida) {
+                errorMessage.textContent = "La contraseña debe contener al menos una letra mayúscula, un número y letras, y tener una longitud mínima de 8 caracteres.";
+            } else {
+                // Redirige a la página de inicio si el registro es exitoso
+                // En una aplicación real, aquí verificarías las credenciales en una base de datos
+                window.location.href = "/html/inicio.html";
+                return false; // Evita el envío del formulario (cambió de true a false)
+            }
+            return false; // Evita el envío del formulario si hay errores de validación
+        }
+    </script>
+</body>
+</html>
